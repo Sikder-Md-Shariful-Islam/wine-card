@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+.display{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.title{
+    text-align: center;
+    position: relative;
+}
+.title:before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #191970;
+    left: 360px;
+    top: 20px;
+    position: absolute;
+  }
+  .title:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #191970;
+    right: 360px;
+    top: 20px;
+    position: absolute;
+  }
+  .sub-container{
+      position: relative;
+  }
+  .border{
+      border: 1px solid #dddddd;
+      width: 200px;
+      height: 400px;
+      position: absolute;
+      left: 20px;
+      align-items: center;
+      justify-content: center;
+  }
+  .bg-div{
+      width: 240px;
+      height: 250px;
+      background-color: white;
+      position: absolute;
+      top: 10px;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 10px 10px 10px #f1f1f1;
+  }
+  .bg-div img{
+      width: 100%;
+  }
+  .sub-container:hover .border{
+    border: 1px solid #b6c3a8;
+  }
+  .sub-container:hover .img{
+      content: url(pata.png);
+  }
+  .bottle img{
+      width: 80px;
+      height: 250px;
+      position: absolute;
+      top: 100px;
+      left: 80px;
+  }
+  .text{
+      position: absolute;
+      top: 360px;
+      left: 75px;
+  }
